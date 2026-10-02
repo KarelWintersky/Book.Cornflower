@@ -6,13 +6,13 @@ site:
 content:
   path: ./content
   default_file: "INITIAL.md"
-  folders: collapsed
+#  folders: collapsed
 
 titles:
   "INITIAL.md": "Prompt"
   "NOW/": "Настоящее"
   "PAST/": "Прошлое"
-  "NSFW/": "NSFW"
+  "NSFW/": "9 - NSFW"
 
 sort:
   before_all:
@@ -54,7 +54,7 @@ protected:
   # Список файлов (относительные пути от корня контента).
   # Можно указывать как точный файл, так и всю папку (тогда защищены все .md внутри).
   files:
-    - "NSFW/"
+    - "9 - NSFW/"
 
   # Метка для защищённых файлов в списке
   lock_icon: "🔒"
