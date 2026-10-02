@@ -9,20 +9,11 @@ content:
 #  folders: collapsed
 
 titles:
-  "INITIAL.md": "Prompt"
-  "NOW/": "Настоящее"
-  "PAST/": "Прошлое"
-  "NSFW/": "9 - NSFW"
+  "INITIAL.md": "История Айрин Ферн"
 
 sort:
   before_all:
     - "INITIAL.md"
-
-# Боковая навигация
-nav:
-  # true — папки свёрнуты по умолчанию.
-  # Ветка с открытым документом всё равно раскрывается автоматически.
-  collapsed: true
 
 theme:
   # Тема по умолчанию: dark | light
