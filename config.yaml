@@ -1,0 +1,62 @@
+# config.yaml
+site:
+  title: "Синеглазка"
+  nav_title: "История Айрин Ферн"
+
+content:
+  path: ./content
+  default_file: "INITIAL.md"
+  folders: collapsed
+
+titles:
+  "INITIAL.md": "Prompt"
+  "NOW/": "Настоящее"
+  "PAST/": "Прошлое"
+  "NSFW/": "NSFW"
+
+sort:
+  before_all:
+    - "INITIAL.md"
+
+# Боковая навигация
+nav:
+  # true — папки свёрнуты по умолчанию.
+  # Ветка с открытым документом всё равно раскрывается автоматически.
+  collapsed: true
+
+theme:
+  # Тема по умолчанию: dark | light
+  default: light
+
+  dark:
+    bg: "#0f1115"
+    panel: "#161920"
+    text: "#e6e8eb"
+    muted: "#9aa0a6"
+    accent: "#5b9df9"
+    code_bg: "#1e222a"
+    border: "#2a2f3a"
+
+  light:
+    bg: "#faf9f7"
+    panel: "#f2f0eb"
+    text: "#232323"
+    muted: "#6b6b6b"
+    accent: "#0366d6"
+    code_bg: "#f6f8fa"
+    border: "#e1e4e8"
+
+# 🔒 Защита файлов паролем.
+# Если секция отсутствует или пуста — защита отключена целиком.
+protected:
+  password: "password"
+
+  # Список файлов (относительные пути от корня контента).
+  # Можно указывать как точный файл, так и всю папку (тогда защищены все .md внутри).
+  files:
+    - "NSFW/"
+
+  # Метка для защищённых файлов в списке
+  lock_icon: "🔒"
+  title: "Файл защищён"
+  hint: "Введите пароль для доступа"
